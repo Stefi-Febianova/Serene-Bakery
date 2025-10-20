@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-choco:#3B2415;
+    --chocolate:#693F26;
+    --ginger:#A26F25;
+    --bisquit:#D5C2A5;
+    --creme:#ECD8B1;
+    
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: var(--ginger);
+    font-family: "Dancing Script", cursive;
+
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover{
+    color: var(--ginger);
+    text-decoration: underline
+}
+
+.navbar .nav-link.active{
+    color: var(--ginger);
+    text-decoration: underline
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid var(--dark-choco);
+    margin-right: -35px;
+    font-family: 'Rubik',sans-serif;
+}
+
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background-color: var(--dark-choco);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+
+}
+
+.main{
+    background: url(./pastry\ 1.jpg)no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 100%;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 90px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: var(--bisquit);
+    color: var(--chocolate);
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover{
+    background-color: var(--chocolate);
+    color: var(--bisquit);
+    transition: 0.5s;
+}
+
+.new .img{
+    height: 70%;
+    width: 50%;
+}
+
+
+h1{
+    font-weight: 700;
+}
+
+
+
+.card:hover{
+    box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
+}
+
+.croissant{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(croissant2.jpg)no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.croissant h1{
+    color: var(--bisquit);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+
+}
+
+.news{
+    background-color: var(--dark-choco);
+    color: var(--creme);
+}
+
+.btn2{
+    height: 45px;
+    width: 100px;
+    background: var(--creme);
+    margin-left: -10px;
+    border: 2px solid var(--creme);
+    font-weight: 600;
+
+}
+
+.news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid var(--creme);
+    outline: none;
+    background-color: var(--dark-choco);
+    color: var(--creme);
+
+}
+
+.news input::placeholder{
+    color: var(--creme);
+    padding-left: 2rem;
+}
+
+.news p{
+    margin: 0;
+}
+
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.credit{
+    text-align: center;
+}
+

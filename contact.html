@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="style.css">
+
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <style>
+        /* From Uiverse.io by dovatgabriel */ 
+    
+        .loader-wrapper {
+          position: fixed;     
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: #fff8f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;       
+        }
+  
+    
+        .jelly-triangle {
+      --uib-size: 42px;
+      --uib-speed: 1.25s;
+      --uib-color: #512727;
+      position: relative;
+      height: var(--uib-size);
+      width: var(--uib-size);
+      filter: url('#uib-jelly-triangle-ooze');
+     }
+     
+     .jelly-triangle__dot,
+     .jelly-triangle::before,
+     .jelly-triangle::after {
+      content: '';
+      position: absolute;
+      width: 33%;
+      height: 33%;
+      background: var(--uib-color);
+      border-radius: 100%;
+     }
+     
+     .jelly-triangle__dot {
+      top: 6%;
+      left: 30%;
+      animation: grow0 var(--uib-speed) ease infinite;
+     }
+     
+     .jelly-triangle::before {
+      bottom: 6%;
+      right: 0;
+      animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
+         infinite;
+     }
+     
+     .jelly-triangle::after {
+      bottom: 6%;
+      left: 0;
+      animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
+         infinite;
+     }
+     
+     .jelly-triangle__traveler {
+      position: absolute;
+      top: 6%;
+      left: 30%;
+      width: 33%;
+      height: 33%;
+      background: var(--uib-color);
+      border-radius: 100%;
+      animation: triangulate var(--uib-speed) ease infinite;
+     }
+     
+     .jelly-maker {
+      width: 0;
+      height: 0;
+      position: absolute;
+     }
+     
+     @keyframes triangulate {
+      0%,
+       100% {
+       transform: none;
+      }
+     
+      33.333% {
+       transform: translate(120%, 175%);
+      }
+     
+      66.666% {
+       transform: translate(-95%, 175%);
+      }
+     }
+     
+     @keyframes grow0 {
+      0%,
+       100% {
+       transform: scale(1.5);
+      }
+     
+      20%,
+       70% {
+       transform: none;
+      }
+     }
+      </style>
+</head>
+<body>
+
+    <!-- From Uiverse.io by dovatgabriel --> 
+    <div class="loader-wrapper">
+        <div class="jelly-triangle">
+          <div class="jelly-triangle__dot"></div>
+          <div class="jelly-triangle__traveler"></div>
+        </div>
+    
+        <svg width="0" height="0" class="jelly-maker">
+          <defs>
+            <filter id="uib-jelly-triangle-ooze">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="7.3" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix"
+                values="1 0 0 0 0  
+                        0 1 0 0 0  
+                        0 0 1 0 0  
+                        0 0 0 18 -7"
+                result="ooze"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+     <!-- Navbar section -->
+
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Sérêne</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav m-auto my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="catalog.html" >Catalogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html">contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="px-2 search" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- contact -->
+    
+      <section class="contact py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-5 m-auto text-center">
+              <h1>Contact Us</h1>
+              <h6 style="color: #693F26; font-family: Dancing Script ,cursive;">Always Be InTouch With Us</h6>
+            </div>
+          </div>
+  
+          <div class="row py-5">
+            <div class="col lg-9 m-auto">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h6>LOCATION</h6>
+                  <p>Ketintang, Surabaya, Jawa Timur, Indonesia</p>
+                
+                  <h6>PHONE</h6>
+                  <p>+62-xxx-xxx-xxx-xxx</p>
+                
+                  <h6>EMAIL</h6>
+                  <p>stefifebianova@gmail.com</p>
+                </div>
+                <div class="col-lg-7">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control bg-light" placeholder="First Name">
+                    </div>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control bg-light" placeholder="Last Name">
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-lg-12 py-3">
+                      <textarea name="" class="form-control bg-light" id="" cols="10" rows="5" placeholder="Enter Message"></textarea>
+                    </div>
+                  </div>
+  
+                  <button class="btn1" onclick="alert('Your message has been sent')">Submit</button>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- footer -->
+      <section class="news py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-9 m-auto text-center">
+              <h1>Join Our Secret Society</h1>
+              <input type="text" placeholder="Enter Your Email">
+              <button class="btn2">Submit</button>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-11">
+              <div class="row">
+  
+                <div class="col-lg-3 py-3">
+                  <h5 class="pb-3">Customer Care</h5>
+                  <p>Regular</p>
+                  <p>On Time</p>
+                  <p>Always Care</p>
+                </div>
+  
+                <div class="col-lg-3 py-3">
+                  <h5 class="pb-3">FAQ's</h5>
+                  <p>No E-charges</p>
+                  <p>Shopping and Delivery</p>
+                  <p>Always Care</p>
+                </div>
+  
+                <div class="col-lg-3 py-3">
+                  <h5 class="pb-3">Our Compant</h5>
+                  <p>About</p>
+                  <p>New Food</p>
+                  <p>Product</p>
+                </div>
+  
+                <div class="col-lg-3 py-3">
+                  <h5 class="pb-3">Social Media</h5>
+                  <span><i class="fab fa-facebook"></i></span>
+                  <span><i class="fab fa-instagram"></i></span>
+                  <span><i class="fab fa-twitter"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span>stefi febianova</span> | all rights reserved!</div>
+        </div>
+      </section>
+    
+
+      <!-- script -->
+      <script src="script.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
